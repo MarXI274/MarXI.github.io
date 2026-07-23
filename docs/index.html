@@ -17,111 +17,7 @@
 <meta property="og:url" content="https://MarXI274.github.io/MarXI.github.io">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
 <title>MarXI的博客</title>
-<meta name="robots" content="noindex, nofollow">
-<style>
-    #passwordOverlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.85);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 99999;
-        flex-direction: column;
-        backdrop-filter: blur(4px);
-    }
-    #passwordOverlay .box {
-        background: #fff;
-        padding: 40px 50px;
-        border-radius: 16px;
-        text-align: center;
-        box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-        max-width: 400px;
-        width: 90%;
-    }
-    #passwordOverlay .box h2 {
-        margin: 0 0 8px 0;
-        font-size: 24px;
-        color: #222;
-    }
-    #passwordOverlay .box p {
-        margin: 0 0 20px 0;
-        color: #666;
-        font-size: 14px;
-    }
-    #passwordOverlay input {
-        padding: 12px 16px;
-        font-size: 16px;
-        border: 2px solid #ddd;
-        border-radius: 8px;
-        width: 100%;
-        box-sizing: border-box;
-        outline: none;
-        transition: border 0.3s;
-    }
-    #passwordOverlay input:focus {
-        border-color: #1f883d;
-    }
-    #passwordOverlay button {
-        padding: 12px 32px;
-        font-size: 16px;
-        background: #1f883d;
-        color: #fff;
-        border: none;
-        border-radius: 8px;
-        cursor: pointer;
-        margin-top: 16px;
-        width: 100%;
-        font-weight: bold;
-        transition: background 0.3s;
-    }
-    #passwordOverlay button:hover {
-        background: #156c2e;
-    }
-    #passwordOverlay .error {
-        color: #d73a49;
-        margin-top: 12px;
-        font-size: 14px;
-        min-height: 20px;
-    }
-</style>
 
-<div id="passwordOverlay">
-    <div class="box">
-        <h2>🔐 输入密码</h2>
-        <p>请输入访问密码以继续</p>
-        <input type="password" id="passwordInput" placeholder="请输入密码..." autofocus>
-        <button onclick="verifyPassword()">确认</button>
-        <div id="errorMsg" class="error"></div>
-    </div>
-</div>
-
-<script>
-    const CORRECT_PASSWORD = "DonotrepostBenicePeace&LOVE";
-
-    function verifyPassword() {
-        const input = document.getElementById("passwordInput");
-        const error = document.getElementById("errorMsg");
-        if (input.value === CORRECT_PASSWORD) {
-            document.getElementById("passwordOverlay").style.display = "none";
-        } else {
-            error.textContent = "❌ 密码错误，请重试";
-            input.value = "";
-            input.focus();
-        }
-    }
-
-    document.getElementById("passwordInput").addEventListener("keydown", function(e) {
-        if (e.key === "Enter") verifyPassword();
-    });
-
-    window.onload = function() {
-        document.getElementById("passwordInput").focus();
-    };
-</script>
 </head>
 <style>
 body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
@@ -184,7 +80,18 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div style="margin-bottom: 16px;">写书评、日记、我的思考</div>
 <nav class="SideNav border">
-<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/2026-6-28%201-19.html">
+<a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/2026-7-24-0-12.html">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="width:16px;height:16px"><path class="svgTop0" d=""></path>
+        </svg>
+        <span class="listTitle">2026/7/24/0:12</span>
+    </div>
+    <div class="listLabels">
+        
+        <span class="Label LabelName" style="background-color:#d3cac1"><object><a style="color:#fff" href="tag.html#日记">日记</a></object></span>
+        <span class="Label LabelTime" style="background-color:#1f883d">2026-07-24</span>
+    </div>
+</a><a class="SideNav-item d-flex flex-items-center flex-justify-between" href="post/2026-6-28%201-19.html">
     <div class="d-flex flex-items-center">
         <svg class="SideNav-icon octicon" style="width:16px;height:16px"><path class="svgTop0" d=""></path>
         </svg>
